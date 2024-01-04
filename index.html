@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image Resizer</h1>
+    <p>
+      파일 업로드는 다중 선택도 가능하며, 리사이징 된 이미지들은 zip으로
+      다운로드 됩니다.
+    </p>
+    <form id="upload-form">
+      <input type="file" id="image-input" multiple accept="image/*" />
+      <input type="number" id="width" placeholder="Width (px)" />
+      <input type="number" id="height" placeholder="Height (px)" />
+      <button type="submit">Resize Images</button>
+    </form>
+    <div id="gallery"></div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.6.0/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+  </body>
+</html>
