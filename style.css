@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#gallery img {
+  margin: 10px;
+  border: 1px solid #ccc;
+  max-width: 100%;
+}
